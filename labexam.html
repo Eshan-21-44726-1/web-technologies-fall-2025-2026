@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event Registration Form</title>
+<style>
+   body {
+     font-family: Arial, sans-serif;
+     background: #f2f2f2;
+     padding: 20px;
+   }
+   .container {
+     width: 400px;
+     background: white;
+     padding: 20px;
+     border-radius: 6px;
+     margin: auto;
+     box-shadow: 0 0 10px #eaeaea;
+   }
+   label {
+     font-weight: bold;
+   }
+   input, select {
+     width: 100%;
+     padding: 8px;
+     margin-top: 5px;
+     margin-bottom: 15px;
+   }
+   .error {
+     color: red;
+     font-size: 14px;
+     margin-top: -12px;
+     margin-bottom: 10px;
+   }
+   button {
+     width: 100%;
+     padding: 10px;
+     background: navy;
+     color: white;
+     border: none;
+     cursor: pointer;
+     font-size: 16px;
+   }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Event Registration Form</h2>
+<form id="regForm">
+
+<label>Full Name (Required)</label>
+<input type="text" id="fullname" placeholder="Enter your full name">
+<div id="nameError" class="error"></div>
+
+<label>Professional Email (Required)</label>
+<input type="email" id="email" placeholder="example@company.com">
+<div id="emailError" class="error"></div>
+
+<label>Company / Institution (Optional)</label>
+<input type="text" id="company" maxlength="100">
+
+<label>Attendance Type (Required)</label>
+<select id="attendance">
+<option value="">Select one</option>
+<option>Online</option>
+<option>In-person</option>
+</select>
+<div id="attendanceError" class="error"></div>
+<button type="submit">Register</button>
+</form>
+</div>
